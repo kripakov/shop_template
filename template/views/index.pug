@@ -1,0 +1,279 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Заголовок
+    meta(name='description', content='')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
+    link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+  body
+    include mixin
+
+    .container
+    section.header
+      .top-mnu
+        .grid.grid--align-baseline
+          .grid__col-6
+
+          .grid__col-6
+            nav
+              ul
+                li
+                  a(href='javascript: void();') Account
+                li
+                  a(href='javascript: void();')  Wishlist
+                li
+                  a(href='javascript: void();') Checkout
+                li
+                  a(href='javascript: void();')  Log In  
+                li
+                  a(href='javascript: void();') Sign Up
+    section
+      .menu
+        .grid.grid--align-baseline
+          .grid__col-6
+            nav
+              ul
+                li.head
+                  a(href='javascript: void();') Leo Shop
+                li
+                  a(href='javascript: void();') home
+                li
+                  a(href='javascript: void();') women
+                li
+                  a(href='javascript: void();') men
+                li
+                  a(href='javascript: void();') other
+                li
+                  a(href='javascript: void();') purchase
+          .grid__col-6
+            nav.buy
+              ul
+                li 
+                  input(type='text', placeholder="Search...")
+                li.copy
+                  a(href='javascript: void();')
+                    img(src='build/img/i-1.png')
+                li.basket
+                  a(href='javascript: void();')
+                    img(src='build/img/i-2.png')
+                li.cart
+                  a(href='javascript: void();') cart (0)
+    section
+      .carousel-img
+
+    section
+      .grid
+        .grid__col-8
+          .featured
+            h2 Featured Products
+            .grid__col-3.glass
+              img(src='build/img/Glasses-7.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-10.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-11.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+          .staff
+            h2 staff pick
+            .grid__col-3.glass
+              img(src='build/img/Glasses-7.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-8.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-9.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+          .new
+            h2 new products
+            .grid__col-3.glass
+              img(src='build/img/Glasses-6.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-5.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+            .grid__col-3.glass
+              img(src='build/img/Glasses-4.jpg')
+              .desc
+                .name
+                  p Set tempus teilus
+                  .sale
+                    p $ 90.00
+                  .brakets
+                    a(href='javascript: void();')
+                      img(src='build/img/i-3.png')
+        .grid__col-2
+          .feat-glass
+            .glass-header
+              h2 Featured Glass
+            .glass-carousel
+              img(src='build/img/Glasses-13.jpg')
+            .sign-up
+              h2 newsletters  signup
+              p Lorem ipsum dolor sit amen, dolor imun ra adlip  ulissys 
+              input(type='text')
+              .button
+                p Subscribe
+    .footer
+      .grid.grid--align-baseline
+        .grid__col-6
+          .br-address
+            ul
+              li.oval
+                a(href='javascript: void();')
+                  img(src='build/img/i-4.png')
+              li
+                a(href='javascript: void();')
+                  p Free shipping on orders over $100
+        .grid__col-6
+          .br-address
+            ul
+              li.oval
+                a(href='javascript: void();')
+                  img(src='build/img/i-5.png')
+              li
+                a(href='javascript: void();')
+                  p call us! toll free- 409-8888-0099 
+    .footer.first
+      .grid.grid--align-baseline
+          .grid__col-3
+            h2 facebook
+          .grid__col-3
+            h2 from twitter
+            nav.tw
+              ul
+                li 
+                  +br-social()(class="fa fa-twitter")
+                  p Lorem Ipsum is simply dummy text of the printing and typesettin
+                li 
+                  +br-social()(class="fa fa-twitter")
+                  p Lorem Ipsum is simply dummy text of the printing and typesettin
+          .grid__col-2
+            h2 information
+            nav.info
+              ul
+                li Sed ultrices purus non.  
+                li sodales sodales.
+                li Curabitur pretium dui vitae
+                li Donec gravida mi in nisl
+                li faucibus leo condimentum
+          .grid__col-2
+            h2 contact us
+            nav.contact
+              ul
+                li Leo Store
+                li Loepards media
+                li KVM Rpad, 4590GH
+                li +1 489-8888-0099
+                li mail@mail.com
+            nav.social
+              ul
+                li
+                  a(href='javascript: void();')
+                    img(src='build/img/gg-7.png')
+                li
+                  a(href='javascript: void();')
+                    img(src='build/img/in-8.png')
+                li
+                  a(href='javascript: void();')
+                    img(src='build/img/br-9.png')
+                li
+                  a(href='javascript: void();')
+                    img(src='build/img/fb-10.png')
+    .footer.second.text-color-footer-bgc
+      .grid.grid--align-baseline
+          .grid__col-6
+            p.open-sans-regular.text-color-footer.f16px &copy: Copyright 2013 Css Author, All Rights Reserved.
+          .grid__col-6
+            nav
+              ul.ulmnu
+                li
+                  a(href='javascript: void();') About Us
+                li
+                  a(href='javascript: void();') Delivery & Returns
+                li
+                  a(href='javascript: void();') Terms & Conditions
+                li
+                  a(href='javascript: void();') Contact Us
+    .hidden
+    //if lt IE 9
+      script(src='libs/html5shiv/es5-shim.min.js')
+      script(src='libs/html5shiv/html5shiv.min.js')
+      script(src='libs/html5shiv/html5shiv-printshiv.min.js')
+      script(src='libs/respond/respond.min.js')
+    script.
+      function loadCSS(hf) {
+      var ms=document.createElement("link");ms.rel="stylesheet";
+      ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+      }
+      //loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
+      loadCSS("css/header.min.css");              //Header Styles (compress & paste to header after release)
+      loadCSS("css/main.min.css");                //User Styles: Main
+      loadCSS("css/media.min.css");               //User Styles: Media
+      loadCSS("css/core.min.css");                //User Styles: Core
+      loadCSS("css/fonts.min.css");               //User Styles: Fonts
+      loadCSS("css/reflex.min.css");              //User Styles: Fonts
+      loadCSS("css/font-awesome.min.css");        //

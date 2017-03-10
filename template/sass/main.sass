@@ -1,0 +1,234 @@
+@import "var"
+@import "core"
+
+*
+	margin: 0
+	padding: 0
+body
+	font: 100%/1.5em Arial, Helvetica, sans-serif
+	color: #000
+
+section
+	.top-mnu, .menu
+		nav
+			ul
+				@extend .ulmnu;
+section
+	.top-mnu, .menu
+		nav
+			ul
+				li
+					a
+						text-decoration: none
+
+section.header
+	background-color: #4cb1ca
+	.top-mnu
+		nav
+			ul
+				li 
+					&:not(:last-child) 
+					margin-right: 10px
+					padding-right: 25px
+					border-right: 1px solid #FFF
+					a 
+						color: #FFF
+						font-size: 16px
+						font-family: 'Open-Sans-Regular'
+
+section
+	.menu
+		h1, a 
+			color: #656565
+			text-transform: uppercase
+			@extend .open-sans-bold
+
+section
+	.menu
+		padding-left: 13%
+		li.head 
+			font-size: 32px
+			margin-right: 45px
+		li 
+			margin-right: 20px
+	nav.buy
+		li 
+			input 
+				height: 30px
+				border: 1px solid #c6c6c6
+				padding-left: 10px
+		li.copy,li.basket
+			width: 45px
+			height: 45px
+			background-color: #7db122
+			border-radius: 38px
+			text-align: center
+			padding-top: 14px
+section
+	.featured, .staff, .new, .sign-up, .glass-header
+		h2
+			color: #a19f9b
+			text-transform: uppercase
+			@extend .open-sans-regular;
+		.name
+			p
+				color: #868487
+				font-size: 14px
+				@extend .open-sans-regular;
+section
+	.featured, .staff, .new, .sign-up
+		.glass
+			display: inline-block
+			border: 3px solid #eff1f0
+			height: 320px
+			text-align: center
+			.desc 
+				position: absolute
+				bottom: -1px
+				text-align: left
+				width: 100%
+				margin-bottom: 25px
+
+section
+	.featured, .staff, .new, .sign-up
+		h2
+			margin: 25px 0 25px 0
+		.sale, .button
+			p
+				color: #7db122
+				font-size: 18px
+				@extend .open-sans-regular;
+	
+section
+	.featured, .staff, .new
+		padding-left: 20%	
+.footer
+	.br-address
+		padding-left: 24%
+section
+	.featured, .staff, .new, .sign-up
+		.sale
+			float: left
+		.brakets
+			float: right
+			position: absolute
+			right: 45px
+			top: 7px
+			a 
+				width: 45px
+				height: 45px
+				display: block
+				background-color: #7db122
+				border-radius: 38px
+				text-align: center
+				img
+					margin-top: 7px
+section
+	.feat-glass
+		border-top: 2px solid #4cb1ca
+		border: 2px solid #eff1f0
+		text-align: center
+		.glass-header
+			display: block
+			height: 100px
+		.glass-carousel
+
+		.sign-up
+
+.footer
+	background-color: #4cb1ca
+	.grid__col-6
+		ul
+			@extend .ulmnu;
+			li
+				display: inline-block 
+				a 
+					text-decoration: none
+					text-transform: uppercase
+					color: #FFF
+					font-family: 'Open-Sans-Regular'
+					p
+						margin: 22px 0 0 25px 
+
+.footer
+	.grid__col-6
+		ul
+			li.oval
+				float: left
+				width: 60px
+				height: 60px
+				display: block
+				background-color: #FFF
+				-webkit-border-radius: 38px
+				border-radius: 38px
+				text-align: center
+				img 
+					margin-top: 15px
+
+.footer.first
+	h2, p, li
+		color: $bgc
+.footer.first
+	padding-left: 12%
+	padding-top: 40px
+	background-color: $main-color-second
+	h2
+		text-transform: uppercase
+		@extend .open-sans-regular; 
+	nav.tw
+		margin-top: 25px
+		ul 
+			li 
+				list-style-type: none
+				margin-bottom: 30px
+				.br-radius
+					float: left
+					background-color: #FFF
+					i
+						width: 50px
+						height: 50px
+						font-size: 175%
+						color: #39a0b9
+						position: relative
+						top: 11px
+						text-align: center
+				p
+					margin-left: 70px 
+					@extend .open-sans-regular, .t-decoration
+
+.footer.first
+	.info, .contact
+		li 
+			margin-bottom: 10px
+			font-family: 'Open-Sans-Regular'
+.footer.first
+	nav.contact
+		border-bottom: 1px solid #FFF
+.footer.first
+	nav.social
+		margin-top: 15px
+		ul 
+			@extend .ulmnu;
+			li 
+				display: inline-block
+				width: 45px
+				height: 45px
+				background-color: #FFF
+				-webkit-border-radius: 38px
+				border-radius: 38px
+				text-align: center
+				padding-top: 15px
+				&:not(:last-child)
+					margin-right: 15px
+					a 
+						text-decoration: none
+.footer.second
+	padding-left: 11%
+	ul 
+		li
+			&:not(:last-child)
+				margin-right: 10px
+				padding-right: 25px
+				border-right: 1px solid $main-color-second
+			a 
+				@extend .open-sans-regular, .t-decoration, .text-color-footer, .f16px 
