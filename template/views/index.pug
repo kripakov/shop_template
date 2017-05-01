@@ -1,4 +1,4 @@
-doctype html
+doctype transitional
 html
   head
     meta(charset='utf-8')
@@ -10,8 +10,13 @@ html
     link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
     link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
     link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
+    
+
   body
     include mixin
+
+    script(src='js/jssor.slider-22.2.16.min.js', type='text/javascript')
+    script(src='js/jssor.unit.js', type='text/javascript')
 
     .container
     section.header
@@ -32,7 +37,7 @@ html
                   a(href='javascript: void();')  Log In  
                 li
                   a(href='javascript: void();') Sign Up
-    section
+    section.mnu
       .menu
         .grid.grid--align-baseline
           .grid__col-6
@@ -63,9 +68,22 @@ html
                     img(src='build/img/i-2.png')
                 li.cart
                   a(href='javascript: void();') cart (0)
-    section
-      .carousel-img
-
+    section#jssor_1(style={position:'relative', margin:'0 auto', top:'0px', left:'0px', width:'1500px', height:'600px', overflow:'hidden', visibility:'hidden'})
+      .jssorl-oval(data-u='loading', style='position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);')
+        img(style='margin-top:-19.0px;position:relative;top:50%;width:38px;height:38px;', src='build/img/oval.svg') 
+      div(data-u='slides', style='cursor:default;position:relative;top:0px;left:0px;width:1500px;height:600px;overflow:hidden;')
+        div
+          img(data-u='image', src='build/img/Glasses-3.jpg')
+          div(style='position:absolute;top:250px;left:200px;width:600px;height:120px;z-index:0;background-color:rgba(255,255,255,0.5);')
+            div(style='position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;') aluminum club
+            div(style='position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;') experience ray-ban
+        div
+          img(data-u='image', src='build/img/Glasses-3.jpg')
+          div(style='position:absolute;top:250px;left:200px;width:600px;height:120px;z-index:0;background-color:rgba(255,255,255,0.5);')
+            div(style='position:absolute;top:15px;left:15px;width:500px;height:40px;z-index:0;font-size:30px;color:#000000;line-height:40px;') aluminum club
+            div(style='position:absolute;top:60px;left:15px;width:500px;height:40px;z-index:0;font-size:22px;color:#000000;line-height:38px;') experience ray-ban
+      span.jssora22l(data-u='arrowleft', style='top:0px;left:81px;width:40px;height:58px;', data-autocenter='2')
+      span.jssora22r(data-u='arrowright', style='top:0px;right:81px;width:40px;height:58px;', data-autocenter='2')
     section
       .grid
         .grid__col-8
@@ -170,7 +188,14 @@ html
             .glass-header
               h2 Featured Glass
             .glass-carousel
-              img(src='build/img/Glasses-13.jpg')
+              #jssor_2(style={position:'relative', margin:'0 auto', top:'0px', left:'0px', width:'auto !Important; ', height:'330px', overflow:'hidden', visibility:'hidden'})
+                .jssorl-oval(data-u='loading', style='position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);')
+                  img(style='margin-top:-19.0px;position:relative;top:50%;width:38px;height:38px;', src='build/img/oval.svg') 
+                div(data-u='slides', style='cursor:default;position:relative;top:0px;left:0px;width:1500px;height:1200px;overflow:hidden;')
+                  div
+                    img(data-u='image', src='build/img/Glasses-13.jpg')
+                  div
+                    img(data-u='image', src='build/img/Glasses-13.jpg')
             .sign-up
               h2 newsletters  signup
               p Lorem ipsum dolor sit amen, dolor imun ra adlip  ulissys 
@@ -259,11 +284,13 @@ html
                 li
                   a(href='javascript: void();') Contact Us
     .hidden
-    //if lt IE 9
+    //if lt IE 8
       script(src='libs/html5shiv/es5-shim.min.js')
       script(src='libs/html5shiv/html5shiv.min.js')
       script(src='libs/html5shiv/html5shiv-printshiv.min.js')
       script(src='libs/respond/respond.min.js')
+    script.
+      jssor_1_slider_init();
     script.
       function loadCSS(hf) {
       var ms=document.createElement("link");ms.rel="stylesheet";
